@@ -1,0 +1,21 @@
+﻿<html>
+  <body>
+    <h2>ผลไม้</h2>
+    <p id="showdata"></p>
+
+    <script>
+        class Fruits{
+            constructor(name,color,price){
+                this.name = name;
+                this.color = color;
+                this.price = price;
+            }
+        }
+
+        banana = new Fruits("banana","yellow",50);
+        document.getElementById("showdata").innerHTML = "ชื่อผลไม้ : " + banana.name + " " + "<br>สืผลไม้ : " + banana.color + "<br>ราคาขาย : " + banana.price;
+
+    </script>
+
+  </body>
+</html>

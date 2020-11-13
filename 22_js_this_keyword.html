@@ -1,0 +1,22 @@
+﻿<html>
+  <body>
+
+    <p id="demo"></p>
+
+    <script>
+    // Create an object:
+    var data = {
+      firstName: "Paw",
+      lastName : "Khe",
+      id     : 1001,
+      fullName : function() {
+        return this.firstName + " " + this.lastName;
+      }
+    };
+
+    // Display data from the object:
+    document.getElementById("demo").innerHTML = data.fullName();
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,24 @@
+﻿<html>
+  <body>
+
+  <p id="car-detail">รถยนต์ (Cars)</p>
+  <button onclick="carFunc()">Detail</button>
+
+  <script>
+  function carFunc(){
+  // Create an object
+  var car = {
+  car_name:"Honda City",
+  color:"white",
+  price:"400,000",
+  fullDetail:function(){
+      return 'ชื่อรุ่นยี่ห้อ ' + this.car_name + '<br>สี ' + this.color + '<br>ราคา ' + this.price; 
+  }
+  };
+
+  document.getElementById('car-detail').innerHTML = car.fullDetail(); 
+  }
+  </script>
+
+  </body>
+</html>
